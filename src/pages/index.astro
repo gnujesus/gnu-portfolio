@@ -1,0 +1,76 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ForthWall from '../components/ForthWall.tsx';
+---
+
+<MainLayout title='Home Page'>
+  <section
+    class='h-full w-full bg-[#050505] text-white flex flex-col items-center'>
+    <div class='w-3/6 my-10'>
+      <div class='mb-5'>
+        <h1>Jesús "GNU" Martínez</h1>
+        <span class='text-xs'
+          >I do cool shit - Currently working at <a>@LancerGroup</a></span
+        >
+      </div>
+
+      <div>
+        <ForthWall
+          >I use linux (and nvim), btw. Not like someone asked.</ForthWall
+        >
+      </div>
+
+      <div class='my-5'>
+        <h1 class='mb-2 underline decoration-2 underline-offset-4'>About</h1>
+        <p>
+          Jesus is a front-end developer based on Dominican Republic, with over
+          1.5 years of experience. He likes to create cool shit when he's
+          inspired. He creates cool shit when he's uninspired too, just in case.
+          He also happens to like linux and customization a lot.
+        </p>
+      </div>
+
+      <div class='my-5'>
+        <h1 class='mb-2 underline decoration-2 underline-offset-4'>Bio</h1>
+        <table>
+          <tr class='flex gap-5 mb-2'>
+            <td>2020</td>
+            <td
+              >Catched an interest on programming and data science due to the
+              pandemic. Started learning the basics of programming on C#. Got
+              tired of semicolons some days later and started learning python.</td
+            >
+          </tr>
+
+          <tr class='flex gap-5 mb-2'>
+            <td>2022</td>
+            <td
+              >After the pandemic and 2 years doing nothing about coding, he
+              graduated from school and decided to study software engineering.
+              Started learning frontend development.</td
+            >
+          </tr>
+
+          <tr class='flex gap-5 mb-2'>
+            <td>2023</td>
+            <td
+              >Started studying at ITLA. Learnt important skills and
+              techonologies such as Java, React, Neovim, bash scripting,
+              leadership, Git. Also, got an interest on freelancing since he
+              thought someone would hire him because he know how to create a
+              component on React. Spoiler: no one hired him.
+            </td>
+          </tr>
+
+          <tr class='flex gap-5 mb-2'>
+            <td>Currently</td>
+            <td
+              >Happy ending: landed an internship as a web designer on
+              LancerGroup.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</MainLayout>
